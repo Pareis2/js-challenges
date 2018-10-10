@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Challenge 1</title>
+    <script type="text/javascript" src="main.js"></script>
+    <style>
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My favourite films!</h1>
+    </header>
+    <main>
+      <ul>
+      </ul>
+      <input type="text" id="filmName">
+      <button id="addFilm">Add Film</button>
+    </main>
+    <script type="text/javascript">
+
+var films = ['Grease', 'Brazil', 'The Fifth Element', 'The Last of the Mohicans', 'Star Wars'];
+
+// The Challenge:
+// ==============
+// Commit your changes after completing each challenge
+// 1. Take the list of films in the 'films' variable above and put them into the 'ul' list in the page
+// 2. Make the list sorted alphabetically (hint: use the array.sort() function)
+// 3. Enable users to add a film to the end of the list by entering it into the text box and clicking 'Add Film'
+// 4. If the new film name is empty, don't add it to the list
+// 5. Keep the list sorted when new films are added
+// 6. Add a 'delete' button after each film to remove it from the list
+// 7. Create a function that will build the list from the list of films and an element to populate.
+//    e.g. make_list(films, 'ul');
+// 8. Put the function and all other code into an external JS file (main.js).
+// 9. Call the function in the JS file from here to create the list
+
+make_list(films, 'ul');
+
+    </script>
+  </body>
+</html>
+  
