@@ -20,3 +20,8 @@ Normally when writing new functionality you would write tests as you go along (T
 Whilst learning Javascript we are going to write some tests after you have worked out how to solve the challenge.
 Open up the "tests.js" file and take a look at the example tests in there. Open the file in your browser to see it running.
 See if you can fill in some of the other empty tests to test the functionality you have just written.
+
+Extra credit
+ * Make deletion persist when new films are added
+ * Add an edit button
+ * Re-work into a class
