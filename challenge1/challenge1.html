@@ -22,13 +22,14 @@ var films = ['Grease', 'Brazil', 'The Fifth Element', 'The Last of the Mohicans'
 
 
 let ul = document.querySelector('ul');
-
+films.sort()
 for(let film in films){
 
   let li = document.createElement('li');
   li.innerHTML = films[film];
 
   ul.appendChild(li)
+
  } //plural for collection and singular fo item im collection
 
 
@@ -53,11 +54,10 @@ for(let film in films){
 //  * Add an edit button
 //  * Re-work into a class
 
-<<<<<<< HEAD
-=======
+
 //make_list(films, 'ul');
 
->>>>>>> starting chellnge 1
+
     </script>
   </body>
 </html>
