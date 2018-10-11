@@ -41,12 +41,31 @@ renderList();
 
 
 
+
+ function uniqueFilm(films, filmName){
+
+       if (films.indexOf(filmName) === -1){
+         films.push(filmName);
+         alert(filmName + ' added!')
+         return true;
+       }
+       else if(films.indexOf(filmName) > -1){
+         alert(filmName + ' already exist');
+         return false;
+       }
+}
+
 let add = function(){
     let filmName = document.getElementById('filmName').value;
 
     if(filmName != ""){
-      films.push(filmName)  // put the value into new li and insert into DOM
+      //films.push(filmName)               // put the value into new li and insert into DOM
+      if(uniqueFilm(films, filmName)){
+
       renderList();
+
+      }
+      
     }
     else{
       alert("you must enter a film")
