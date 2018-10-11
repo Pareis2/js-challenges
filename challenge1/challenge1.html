@@ -20,13 +20,27 @@
 
 var films = ['Grease', 'Brazil', 'The Fifth Element', 'The Last of the Mohicans', 'Star Wars'];
 
+
+let ul = document.querySelector('ul');
+
+for(let film in films){
+
+  let li = document.createElement('li');
+  li.innerHTML = films[film];
+
+  ul.appendChild(li)
+ } //plural for collection and singular fo item im collection
+
+
+
+
 // The Challenge:
 // ==============
 // Commit your changes after completing each challenge
-// 1. Take the list of films in the 'films' variable above and put them into the 'ul' list in the page
-// 2. Make the list sorted alphabetically (hint: use the array.sort() function)
-// 3. Enable users to add a film to the end of the list by entering it into the text box and clicking 'Add Film'
-// 4. If the new film name is empty, don't add it to the list
+// 1. Take the list of films in the 'films' variable above and put them into the 'ul' list in the page -- find ul you want to insert into, loop through the list create list element, insert into ul
+// 2. Make the list sorted alphabetically (hint: use the array.sort() function)                        --
+// 3. Enable users to add a film to the end of the list by entering it into the text box and clicking 'Add Film' --
+// 4. If the new film name is empty, don't add it to the list                                                    --
 // 5. Keep the list sorted when new films are added
 // 6. Add a 'delete' button after each film to remove it from the list
 // 7. Create a function that will build the list from the list of films and an element to populate.
@@ -39,7 +53,11 @@ var films = ['Grease', 'Brazil', 'The Fifth Element', 'The Last of the Mohicans'
 //  * Add an edit button
 //  * Re-work into a class
 
+<<<<<<< HEAD
+=======
+//make_list(films, 'ul');
+
+>>>>>>> starting chellnge 1
     </script>
   </body>
 </html>
-  
