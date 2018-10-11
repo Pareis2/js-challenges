@@ -22,26 +22,34 @@ var films = ['Grease', 'Brazil', 'The Fifth Element', 'The Last of the Mohicans'
 
 
 let ul = document.querySelector('ul');
-films.sort()
-for(let film in films){
 
-  let li = document.createElement('li');
-  li.innerHTML = films[film];
+function renderList(){
 
-  ul.appendChild(li)
+  films.sort()
+  ul.innerHTML = "";
 
- } //plural for collection and singular fo item im collection
+  for(let film in films){
+
+    let li = document.createElement('li');
+    li.innerHTML = films[film];
+
+    ul.appendChild(li)
+
+   } //plural for collection and singular fo item im collection
+}
+renderList();
+
+
 
 let add = function(){
     let filmName = document.getElementById('filmName').value;
 
     if(filmName != ""){
-      let li = document.createElement('li');
-      li.innerHTML = filmName;
-      ul.appendChild(li);// put the value into new li and insert into DOM
+      films.push(filmName)  // put the value into new li and insert into DOM
+      renderList();
     }
     else{
-      alert("you must enter a string")
+      alert("you must enter a film")
     }
 
 }
