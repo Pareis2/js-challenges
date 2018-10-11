@@ -32,28 +32,32 @@ for(let film in films){
 
  } //plural for collection and singular fo item im collection
 
-
-
-
-
-
 let add = function(){
     let filmName = document.getElementById('filmName').value;
-    let li = document.createElement('li');
-    li.innerHTML = filmName;
-    ul.appendChild(li);// put the value into new li and insert into DOM
-  }
 
-  let button = document.getElementById('addFilm')//setup event listener
-  button.onclick = add;// when clicked, log the vaslue of the field
+    if(filmName != ""){
+      let li = document.createElement('li');
+      li.innerHTML = filmName;
+      ul.appendChild(li);// put the value into new li and insert into DOM
+    }
+    else{
+      alert("you must enter a string")
+    }
+
+}
+
+let button = document.getElementById('addFilm')//setup event listener
+button.onclick = add;// when clicked, log the vaslue of the field
+
+
 
 // The Challenge:
 // ==============
 // Commit your changes after completing each challenge
-// 1. Take the list of films in the 'films' variable above and put them into the 'ul' list in the page -- find ul you want to insert into, loop through the list create list element, insert into ul
-// 2. Make the list sorted alphabetically (hint: use the array.sort() function)                        --
-// 3. Enable users to add a film to the end of the list by entering it into the text box and clicking 'Add Film' --
-// 4. If the new film name is empty, don't add it to the list                                                    --
+// 1. Take the list of films in the 'films' variable above and put them into the 'ul' list in the page
+// 2. Make the list sorted alphabetically (hint: use the array.sort() function)
+// 3. Enable users to add a film to the end of the list by entering it into the text box and clicking 'Add Film'
+// 4. If the new film name is empty, don't add it to the list
 // 5. Keep the list sorted when new films are added
 // 6. Add a 'delete' button after each film to remove it from the list
 // 7. Create a function that will build the list from the list of films and an element to populate.
