@@ -35,6 +35,18 @@ for(let film in films){
 
 
 
+
+
+let add = function(){
+    let filmName = document.getElementById('filmName').value;
+    let li = document.createElement('li');
+    li.innerHTML = filmName;
+    ul.appendChild(li);// put the value into new li and insert into DOM
+  }
+
+  let button = document.getElementById('addFilm')//setup event listener
+  button.onclick = add;// when clicked, log the vaslue of the field
+
 // The Challenge:
 // ==============
 // Commit your changes after completing each challenge
